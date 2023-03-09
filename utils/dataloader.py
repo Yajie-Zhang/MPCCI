@@ -234,34 +234,3 @@ class DATASET():
 
     def __len__(self):
         return len(self.data)
-
-# if __name__ == '__main__':
-#     dataset = 'breast'
-#     path = 'E:/PycharmProjects/Fujian/data/breast_cancer/train.txt'
-#     root = 'E:/dataset/福建省立医院乳腺癌分析/福建省立医院乳腺癌图片'
-#
-#     # dataset = 'BreakHis'
-#     # path = 'C:/Users/Administrator/PycharmProjects/MedicalIMGPro/breast/train8class400X'
-#     # root = 'C:/Users/Administrator/Documents/papers/medicalAI/retrieval/dataset/archive-BreaKHis_v1/breast'
-#     Dataset = DATASET(dataset, path, root)
-#     dataloader = torch.utils.data.DataLoader(Dataset, batch_size=1, shuffle=False, num_workers=0, drop_last=False)
-#     for i, (index, img,target) in enumerate(dataloader):
-#         a=img.numpy()
-#         # b=name[0].split('/')[-1]
-        # save_path='mask'+b
-        # c=mask.max()
-        # mask[mask==c]=0
-        # c = mask.max()
-        # mask[mask == c] = 0
-        # c = mask.max()
-        # mask[mask!=c]=0
-        # # vutils.save_image(mask[0]*255,b)
-        # img[img>0]=1
-        # img=1-img
-        # print(img.sum()/img.shape[0]/img.shape[1]/img.shape[2]/img.shape[3])
-        print()
-
-
-
-
-
