@@ -77,10 +77,6 @@ def main(args):
         val_dir = './data/COVID/covid_val1.txt'
         test_dir = './data/COVID/covid_test1.txt'
         train_dir = './data/COVID/covid_train1.txt'
-        if args.device == 'cpu':
-            args.root = 'D:/collection_of_covid'
-        else:
-            args.root = '/nfs/yajie/collection_of_covid'
 
     elif args.dataset=='breastPublic':
         args.num_classes = 2
