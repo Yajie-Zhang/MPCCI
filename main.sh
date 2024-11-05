@@ -1,0 +1,1 @@
+python main_ct.py --device cuda:0 --dataset ct
