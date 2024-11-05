@@ -1,5 +1,3 @@
-# The baseline implementation of resnet, alexnet, vit, and resnet_attention
-
 import argparse
 import os
 import time
@@ -19,14 +17,6 @@ from utils.fix_seeds import fix_random_seeds
 
 import warnings
 warnings.filterwarnings('ignore')
-
-
-torchvision_archs = sorted(name for name in torchvision_models.__dict__
-    if name.islower() and not name.startswith("__")
-    and callable(torchvision_models.__dict__[name]))
-
-model_names = ['main_vit_tiny',  'main_vit_base'] + torchvision_archs
-
 
 def get_args_parser():
     parser = argparse.ArgumentParser('MPCCI', add_help=False)
