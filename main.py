@@ -110,8 +110,10 @@ def main(args):
 
     criterion = nn.CrossEntropyLoss()
     parameters = model.parameters()
-    optimizer = torch.optim.SGD(parameters, lr=args.lr, momentum=0.9, weight_decay=args.weight_decay)
-    # optimizer = torch.optim.AdamW(parameters, lr=args.lr, weight_decay=0.0)
+    if args.dataset=='ct':
+        optimizer = torch.optim.SGD(parameters, lr=args.lr, momentum=0.9, weight_decay=args.weight_decay)
+    elif args.dataset=='breastPublic':
+        optimizer = torch.optim.AdamW(parameters, lr=args.lr, weight_decay=0.0)
     model = model.to(device)  ## 部署在GPU  todo
     num_train=len(dataset_train)
     num_test=len(dataset_test)
