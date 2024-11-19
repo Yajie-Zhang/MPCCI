@@ -1,4 +1,6 @@
 # MPCCI
+![Uploading image.png…]()
+
 Dataset Preparation
 ---
 CT COVID-19: link：https://www.kaggle.com/datasets/maedemaftouni/large-covid19-ct-slice-dataset. <br>
