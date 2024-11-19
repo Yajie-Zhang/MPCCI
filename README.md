@@ -9,3 +9,6 @@ How to run
 ---
 python main.py --device cuda:0 --dataset ct
 
+Contact
+---
+If you have any questions, please contact rubyzhangyajie@gmail.com 
