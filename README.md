@@ -1,5 +1,5 @@
 # MPCCI
-![Uploading image.png…]()
+
 
 Dataset Preparation
 ---
